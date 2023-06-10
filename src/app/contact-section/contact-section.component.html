@@ -1,0 +1,74 @@
+<!-- contact section design -->
+<section class="contact" id="contact">
+  <h2 class="heading">
+    Contact <span>Me!</span><span class="animate scroll" style="--i: 1"></span>
+  </h2>
+
+  <form (submit)="sendMail()" ngNativeValidate #myForm>
+    <div class="input-box">
+      <div class="input-field">
+        <input
+          type="text"
+          name="name"
+          #nameField
+          placeholder="Full Name"
+          required
+        />
+        <span class="focus"></span>
+      </div>
+      <div class="input-field">
+        <input type="text" #emailField placeholder="Email Address" required />
+        <span class="focus"></span>
+      </div>
+
+      <span class="animate scroll" style="--i: 3"></span>
+    </div>
+
+    <div class="input-box">
+      <div class="input-field">
+        <input
+          type="number"
+          #numberField
+          placeholder="Mobile Number"
+          required
+        />
+        <span class="focus"></span>
+      </div>
+      <div class="input-field">
+        <input
+          type="text"
+          #emailSubjectField
+          placeholder="Email Subject"
+          required
+        />
+        <span class="focus"></span>
+      </div>
+
+      <span class="animate scroll" style="--i: 5"></span>
+    </div>
+
+    <div class="textarea-field">
+      <textarea
+        name=""
+        name="message"
+        #messageField
+        cols="30"
+        rows="10"
+        placeholder="Your Message"
+        required
+      ></textarea>
+      <span class="focus"></span>
+
+      <span class="animate scroll" style="--i: 7"></span>
+    </div>
+
+    <div class="btn-box btns">
+      <button type="submit" #sendButton class="btn">Submit</button>
+
+      <span class="animate scroll" style="--i: 9"></span>
+    </div>
+    <div class="message-box" *ngIf="messageSent">
+      <p>Message successfully sent!</p>
+    </div>
+  </form>
+</section>

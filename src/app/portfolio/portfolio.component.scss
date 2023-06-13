@@ -313,6 +313,13 @@ p {
   }
 }
 
+@media (max-width: 450px) {
+  .projects {
+    width: 30rem;
+    height: 35rem;
+  }
+
+}
 
 
 /* BREAKPOINTS */

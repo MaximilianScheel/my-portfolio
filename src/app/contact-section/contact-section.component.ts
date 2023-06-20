@@ -43,7 +43,7 @@ export class ContactSectionComponent {
     formData.append('emailSubject', emailSubjectField.value);
 
 
-    await fetch('https://maximilian-scheel.developerakademie.net/send_mail/send_mail.php',
+    await fetch('https://webspace26.do.de/html/send_mail/send_mail.php',
       {
         method: 'POST',
         body: formData

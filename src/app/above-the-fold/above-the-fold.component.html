@@ -1,4 +1,5 @@
 <!-- home section design -->
+<app-header></app-header>
 <section class="home show-animate" id="home">
   <div class="home-content">
       <h1>Hi, I'm <span>Max Scheel</span><span class="animate" style="--i:2;"></span></h1>
@@ -13,14 +14,14 @@
       -->
 
       <div class="btn-box">
-          <a href="#contact" class="btn">Let's Talk</a>
+          <a [routerLink]="'/home'" fragment="contact" class="btn">Let's Talk</a>
           <span class="animate" style="--i:5;"></span>
       </div>
   </div>
 
   <div class="home-sci">
       <a href="https://github.com/MaximilianScheel" target="_blank"><i class='bx bxl-github'></i></a>
-      <a href="#contact"><i class='bx bx-envelope'></i></a>
+      <a [routerLink]="'/home'" fragment="contact"><i class='bx bx-envelope'></i></a>
       <a href="https://www.linkedin.com/in/maximilian-scheel-010aa323b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
       <span class="animate" style="--i:6;"></span>
   </div>
@@ -28,4 +29,11 @@
   <div class="home-imgHover"></div>
   <span class="animate home-img" style="--i:7;"></span>
 </section>
+<app-about-me></app-about-me>
+<app-my-skills></app-my-skills>
+<app-portfolio></app-portfolio>
+<app-contact-section></app-contact-section>
+<app-footer></app-footer>
+
+
 

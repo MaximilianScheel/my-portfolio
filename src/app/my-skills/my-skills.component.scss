@@ -61,6 +61,8 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 4rem;
+  max-width: 120rem;
+
 }
 
 .skills-box .skills-content::before {
@@ -185,6 +187,7 @@ span {
 
 .skills-content img {
   transition: transform 0.2s ease-in-out;
+  height: 8rem;
 }
 
 .skills-content img:hover {

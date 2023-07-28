@@ -340,7 +340,7 @@ section {
   }
 }
 
-@keyframes slideInLeft {
+//@keyframes slideInLeft {
   from {
       transform: translateX(-100%);
   }
@@ -348,4 +348,4 @@ section {
   to {
       transform: translateX(0);
   }
-}
+//}

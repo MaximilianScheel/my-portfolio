@@ -1,4 +1,5 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-contact-section',
@@ -6,6 +7,11 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./contact-section.component.scss'],
 })
 export class ContactSectionComponent {
+
+  ngOnInit() {
+    AOS.init();
+   }
+
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;

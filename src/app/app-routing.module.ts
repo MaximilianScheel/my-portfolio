@@ -15,8 +15,7 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'contact', component: ContactSectionComponent },
   { path: 'legal-notice', component: LegalNoticeComponent},
-
- 
+  { path: 'home', component: AboveTheFoldComponent, pathMatch: 'full' },
 ];
 
 const routerOptions = {
